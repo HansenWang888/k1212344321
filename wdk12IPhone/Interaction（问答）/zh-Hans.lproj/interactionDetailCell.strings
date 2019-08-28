@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "回复"; ObjectID = "4dB-cw-rKc"; */
+"4dB-cw-rKc.normalTitle" = "回复";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "F8x-zC-fBU"; */
+"F8x-zC-fBU.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LlA-EV-Yb4"; */
+"LlA-EV-Yb4.text" = "Label";
+
+/* Class = "UILabel"; text = "被采纳"; ObjectID = "Yxw-Dh-O80"; */
+"Yxw-Dh-O80.text" = "被采纳";
+
+/* Class = "UILabel"; text = "2015-09-22 10 : 40"; ObjectID = "eAY-D4-zuE"; */
+"eAY-D4-zuE.text" = "2015-09-22 10 : 40";
+
+/* Class = "UIButton"; normalTitle = "采纳"; ObjectID = "iFj-gY-cAt"; */
+"iFj-gY-cAt.normalTitle" = "采纳";

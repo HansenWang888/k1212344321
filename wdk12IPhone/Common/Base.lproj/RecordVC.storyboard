@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Record View Controller-->
+        <scene sceneID="5MJ-MR-yso">
+            <objects>
+                <viewController storyboardIdentifier="recordVC" id="pTI-Nl-bZ2" customClass="RecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IjS-q3-A9D"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvv-s2-Tjg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5qI-kM-2uG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3s-cJ-deP">
+                                <rect key="frame" x="376" y="509" width="30" height="30"/>
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="recordButtonClick:" destination="pTI-Nl-bZ2" eventType="touchUpInside" id="mXI-Er-Hyg"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-ic-U1S">
+                                <rect key="frame" x="20" y="299" width="560" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-4K-i3L">
+                                <rect key="frame" x="264" y="270" width="71.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJ3-nw-2RL">
+                                <rect key="frame" x="274" y="498" width="52" height="52"/>
+                                <state key="normal" image="record-s"/>
+                                <state key="selected" image="record-t"/>
+                                <connections>
+                                    <action selector="recordButtonClick:" destination="pTI-Nl-bZ2" eventType="touchUpInside" id="OfB-7k-Peb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV5-5l-khK">
+                                <rect key="frame" x="194" y="507" width="30" height="34"/>
+                                <state key="normal" title="播放"/>
+                                <state key="selected" title="暂停"/>
+                                <connections>
+                                    <action selector="recordButtonClick:" destination="pTI-Nl-bZ2" eventType="touchUpInside" id="Hcv-GW-sMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uV5-5l-khK" firstAttribute="centerY" secondItem="FJ3-nw-2RL" secondAttribute="centerY" id="194-gd-mDu"/>
+                            <constraint firstAttribute="trailing" secondItem="6S3-ic-U1S" secondAttribute="trailing" constant="20" id="25h-1E-1np"/>
+                            <constraint firstItem="Mvv-s2-Tjg" firstAttribute="top" secondItem="FJ3-nw-2RL" secondAttribute="bottom" constant="50" id="437-QF-UGg"/>
+                            <constraint firstItem="6S3-ic-U1S" firstAttribute="centerY" secondItem="5qI-kM-2uG" secondAttribute="centerY" id="5LS-rZ-aSU"/>
+                            <constraint firstItem="p3s-cJ-deP" firstAttribute="centerY" secondItem="FJ3-nw-2RL" secondAttribute="centerY" id="76f-0E-0T5"/>
+                            <constraint firstItem="6S3-ic-U1S" firstAttribute="top" secondItem="cOi-4K-i3L" secondAttribute="bottom" constant="8" id="JZs-RS-b3g"/>
+                            <constraint firstItem="FJ3-nw-2RL" firstAttribute="centerX" secondItem="5qI-kM-2uG" secondAttribute="centerX" id="MiF-93-aEJ"/>
+                            <constraint firstItem="cOi-4K-i3L" firstAttribute="centerX" secondItem="5qI-kM-2uG" secondAttribute="centerX" id="Rup-pS-w3X"/>
+                            <constraint firstItem="FJ3-nw-2RL" firstAttribute="leading" secondItem="uV5-5l-khK" secondAttribute="trailing" constant="50" id="UuO-wT-iNa"/>
+                            <constraint firstItem="6S3-ic-U1S" firstAttribute="leading" secondItem="5qI-kM-2uG" secondAttribute="leading" constant="20" id="eDg-gh-f8d"/>
+                            <constraint firstItem="p3s-cJ-deP" firstAttribute="leading" secondItem="FJ3-nw-2RL" secondAttribute="trailing" constant="50" id="vRr-oS-FfI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="endRecord" destination="p3s-cJ-deP" id="UVL-9e-KHD"/>
+                        <outlet property="playRecord" destination="uV5-5l-khK" id="D0D-qr-lwE"/>
+                        <outlet property="progressV" destination="6S3-ic-U1S" id="i1B-xl-qk8"/>
+                        <outlet property="startRecord" destination="FJ3-nw-2RL" id="LTJ-T2-UPe"/>
+                        <outlet property="timeLabel" destination="cOi-4K-i3L" id="M1K-ZM-lxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyg-tZ-1sS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="record-s" width="52" height="52"/>
+        <image name="record-t" width="52" height="52"/>
+    </resources>
+</document>

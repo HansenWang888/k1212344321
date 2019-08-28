@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rhh-lW-jdN" customClass="IMChatPhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="I4a-WD-yIg">
+                    <rect key="frame" x="0.0" y="0.0" width="449" height="117"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KmA-Xc-HFZ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQJ-sb-6Xk">
+                    <rect key="frame" x="8" y="123" width="40" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="A7Y-YY-Mis"/>
+                        <constraint firstAttribute="height" constant="21" id="SRO-0B-hp1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="相册">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="photosBtnClick" destination="rhh-lW-jdN" eventType="touchUpInside" id="vF0-Hh-mfe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-dB-RpH">
+                    <rect key="frame" x="340" y="123" width="40" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Mqg-Ub-ECH"/>
+                        <constraint firstAttribute="width" constant="40" id="PSg-VC-22D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendBtnClick:" destination="rhh-lW-jdN" eventType="touchUpInside" id="SU8-lz-q10"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-Xz-Q2u">
+                    <rect key="frame" x="400" y="123" width="29" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ghy-we-Mrp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnZ-Jo-7zS">
+                    <rect key="frame" x="63" y="123" width="40" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="m3P-ih-fPH"/>
+                        <constraint firstAttribute="height" constant="21" id="z6E-RV-b8v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="拍照">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cameraBtnClick" destination="rhh-lW-jdN" eventType="touchUpInside" id="pe6-KA-hhR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I4a-WD-yIg" secondAttribute="bottom" constant="35" id="86p-q5-mL3"/>
+                <constraint firstItem="NQJ-sb-6Xk" firstAttribute="leading" secondItem="rhh-lW-jdN" secondAttribute="leading" constant="8" id="8R0-Ii-0Oh"/>
+                <constraint firstItem="jnZ-Jo-7zS" firstAttribute="leading" secondItem="NQJ-sb-6Xk" secondAttribute="trailing" constant="15" id="8ac-xe-Md5"/>
+                <constraint firstItem="K9B-Xz-Q2u" firstAttribute="top" secondItem="rhh-lW-jdN" secondAttribute="top" constant="8" id="APT-wY-dAf"/>
+                <constraint firstItem="NQJ-sb-6Xk" firstAttribute="top" secondItem="rhh-lW-jdN" secondAttribute="top" constant="8" id="Acb-oc-OrC"/>
+                <constraint firstAttribute="trailing" secondItem="I4a-WD-yIg" secondAttribute="trailing" id="C0k-6S-7H6"/>
+                <constraint firstItem="jnZ-Jo-7zS" firstAttribute="centerY" secondItem="NQJ-sb-6Xk" secondAttribute="centerY" id="EaE-fR-5jm"/>
+                <constraint firstAttribute="trailing" secondItem="K9B-Xz-Q2u" secondAttribute="trailing" constant="20" id="W44-KP-U3X"/>
+                <constraint firstItem="rOW-dB-RpH" firstAttribute="top" secondItem="K9B-Xz-Q2u" secondAttribute="top" id="cZp-gQ-a01"/>
+                <constraint firstItem="I4a-WD-yIg" firstAttribute="leading" secondItem="rhh-lW-jdN" secondAttribute="leading" id="grc-DV-AE2"/>
+                <constraint firstItem="K9B-Xz-Q2u" firstAttribute="leading" secondItem="rOW-dB-RpH" secondAttribute="trailing" constant="20" id="stK-Xo-DdG"/>
+                <constraint firstAttribute="bottom" secondItem="K9B-Xz-Q2u" secondAttribute="bottom" constant="8" id="yD6-NV-15m"/>
+                <constraint firstAttribute="bottom" secondItem="NQJ-sb-6Xk" secondAttribute="bottom" constant="8" id="yZI-bg-eDb"/>
+                <constraint firstItem="I4a-WD-yIg" firstAttribute="top" secondItem="rhh-lW-jdN" secondAttribute="top" id="zh2-Xp-1Oa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Acb-oc-OrC"/>
+                    <exclude reference="APT-wY-dAf"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cameraBtn" destination="jnZ-Jo-7zS" id="vrl-fp-o1i"/>
+                <outlet property="collectionView" destination="I4a-WD-yIg" id="aPw-ur-V79"/>
+                <outlet property="countLabel" destination="K9B-Xz-Q2u" id="sYY-qm-XMD"/>
+                <outlet property="photoBtn" destination="NQJ-sb-6Xk" id="3cL-jc-BhB"/>
+                <outlet property="sendBtn" destination="rOW-dB-RpH" id="QVH-OE-7pk"/>
+            </connections>
+            <point key="canvasLocation" x="360.5" y="323"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "  选择发布班级"; ObjectID = "9Gz-am-dnW"; */
+"9Gz-am-dnW.text" = "  Select a class to publish";
+
+/* Class = "UIButton"; normalTitle = "确定"; ObjectID = "q1r-A3-FSj"; */
+"q1r-A3-FSj.normalTitle" = "Confirm";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "vnI-j9-OUo"; */
+"vnI-j9-OUo.normalTitle" = "Cancel";

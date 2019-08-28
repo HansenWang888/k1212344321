@@ -1,0 +1,142 @@
+/*
+ IM_Localized.strings
+ 伟东教育社区
+ 
+ Created by 老船长 on 2017/2/4.
+ Copyright © 2017年 汪宁. All rights reserved.
+ */
+"家校通" = "IM";
+"新朋友" = "New friends";
+"星期五" = "Fri";
+"星期四" = "Thu";
+"星期三" = "Wed";
+"星期二" = "Tue";
+"星期一" = "Mon";
+"星期六" = "Sat";
+"星期日" = "Sun";
+"会话" = "Session";
+"通讯录" = "Contacts";
+"显示群组内昵称" = "Member nickname";
+"清空聊天记录" = "Clear history";
+"消息免打扰" = "Mute notifications";
+"置顶会话" = "Top chat";
+"退出该组" = "Exit";
+"发消息" = "Send";
+"聊天信息" = "Group";
+"添加群成员" = "Friends";
+"添加到通讯录" = "Add to Contacts";
+"修改群组会话名" = "Group name";
+"修改组内昵称" = "My group nickname";
+"注册号" = "Acount";
+"设置备注" = "Remark";
+"删除好友" = "Delete";
+"相册" = "Album";
+"公众号" = "Account";
+"主体类型" = "Type";
+"查看历史消息" = "History";
+"进入公众号" = "Enter";
+"清空内容" = "Clear";
+"推荐公众号" = "Recommend";
+"搜索公众号获取最新资讯" = "Search";
+"关注公众号" = "Subscribe";
+"关注" = "Add";
+"添加朋友" = "Add";
+"加好友" = "Add";
+"发送好友验证" = "Send verification";
+"对方需要你填写验证信息" = "Please input the verification information";
+"晚上" = "pm";
+"你还没有好友，快去添加吧" = "You do not have friends, go and add some";
+"消息" = "Session";
+"会话组" = "Session Group";
+"新建会话组" = "Create a group";
+"按下开始说话" = "Press to start speaking";
+"访问相册失败" = "Failed to access album";
+"您可以在系统中的设置中的左边目录找到'wdk12Pad-HD-T'" = "You can find 'wdk12Pad-HD-T' in the left directory of the system settings";
+"我知道了" = "I see";
+"发送" = "Send";
+"请选择图片" = "Please select a picture";
+"群名称" = "Group name";
+"我的群昵称" = "My group nickname";
+"加入通讯录" = "Add to Contacts";
+"举报" = "Report";
+"昨天" = "yesterday";
+"删除" = "Delete";
+"手机号" = "Phone number";
+"邮箱" = "Mailbox";
+"置顶" = "Stick";
+"搜索" = "Search";
+"完成" = "Done";
+"新的朋友" = "New friends";
+"搜索用户" = "Search";
+"已关注" = "subscribed";
+"说明" = "Description";
+"取消关注" = "Unsubscribe";
+"推荐成功" = "Recommendation succeeded";
+"推荐" = "Recom-\nmend";
+"群组" = "Group";
+"用户" = "User";
+"公众号推荐" = "Recommendation";
+"历史消息" = "Historical messages";
+"色情低俗" = "Pornography and lewd information";
+"广告骚扰" = "Ads harassment";
+"提交" = "Submit";
+"政治敏感" = "Politically sensitive";
+"谣言" = "Rumor";
+"欺诈骗钱" = "Fraud to get money";
+"违法 (暴力恐怖、违禁品等)" = "Illegal (violence, terrorist, contraband, etc.)";
+"请稍后" = "Please wait";
+"提交成功！" = "Submit successful!";
+"提交成功" = "Submit successful";
+
+"视频" = "Vedio";
+"文件" = "File";
+"图片" = "Picture";
+"分享" = "Share";
+"推荐公众号" = "Official account";
+"未知消息类型" = "Unknown";
+"语音" = "Audio";
+"图文" = "Image-text";
+//手机--------------------
+"拍照" = "Camera";
+"添加联系人" = "Add";
+"查找好友" = "Search";
+"获取更多资讯和服务" = "Get more information and services";
+"扫一扫" = "Scan";
+"扫描二维码名片" = "Scanning 2D code card";
+"帐号" = "Account";
+"详细资料" = "Details";
+"手指上滑，直接取消" = "Slide up your finger to cancel directly";
+"上午" = "am";
+"下午" = "pm";
+"群组" = "Groups";
+"同意" = "Agree";
+"拒绝" = "Refuse";
+"我是" = "I am";
+
+//------------提示--------------/
+"时间太短" = "Time is too short!";
+"请选择图片" = "Please select a picture";
+"打开失败" = "Open failed";
+"你还没有好友，快去添加吧" = "You do not have friends, go and add some";
+"正在创建" = "Creating";
+"创建成功" = "Created successfully";
+"请稍候" = "Please wait";
+"没有相关人员" = "No relevant personnel";
+"操作失败" = "Operation failed!";
+"你还没有可以推荐的用户和群组" = "You do not have users and groups you can recommend";
+"推荐成功" = "Recommendation succeeded";
+"请选择" = "Please choose";
+"举报成功" = "Report succeeded";
+"获取失败" = "Failed to get";
+"正在删除" = "Deleting";
+"内容不能为空" = "The content cannot be null";
+"修改备注" = "Modify remark";
+"你们已经是好友" = "You are friends";
+"这个群不存在" = "The group does not exist";
+"加入失败" = "Join Failed";
+"验证发送成功" = "Verify that success";
+"不能发送空白的消息" = "Unable to send blank message";
+"连接中" = "connecting...";
+"未连接" = "offline";
+
+/********************************************************************/

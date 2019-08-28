@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "NMr-h2-HUQ"; */
+"NMr-h2-HUQ.normalTitle" = "Log in";
+
+/* Class = "UIButton"; normalTitle = " 我 是 老 师"; ObjectID = "Zyh-q1-7n6"; */
+"Zyh-q1-7n6.normalTitle" = "I'm a teacher";
+
+/* Class = "UITextField"; placeholder = "请输入帐号/昵称/手机号/邮箱"; ObjectID = "eUW-am-34J"; */
+"eUW-am-34J.placeholder" = "Account/nickname/mobile/email";
+
+/* Class = "UITextField"; text = "1000179628"; ObjectID = "eUW-am-34J"; */
+"eUW-am-34J.text" = "";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "zOF-Bc-U0W"; */
+"zOF-Bc-U0W.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "111111"; ObjectID = "zOF-Bc-U0W"; */
+"zOF-Bc-U0W.text" = "";

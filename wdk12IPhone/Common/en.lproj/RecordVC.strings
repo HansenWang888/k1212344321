@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "cOi-4K-i3L"; */
+"cOi-4K-i3L.text" = "00:00:00";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "p3s-cJ-deP"; */
+"p3s-cJ-deP.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "播放"; ObjectID = "uV5-5l-khK"; */
+"uV5-5l-khK.normalTitle" = "Play";
+
+/* Class = "UIButton"; selectedTitle = "暂停"; ObjectID = "uV5-5l-khK"; */
+"uV5-5l-khK.selectedTitle" = "Pause";

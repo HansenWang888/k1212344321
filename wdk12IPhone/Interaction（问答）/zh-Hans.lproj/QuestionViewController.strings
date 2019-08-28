@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "匿名"; ObjectID = "Dja-3E-XAb"; */
+"Dja-3E-XAb.text" = "匿名";
+
+/* Class = "UISegmentedControl"; ZGA-zt-xdz.segmentTitles[0] = "课程疑问"; ObjectID = "ZGA-zt-xdz"; */
+"ZGA-zt-xdz.segmentTitles[0]" = "课程疑问";
+
+/* Class = "UISegmentedControl"; ZGA-zt-xdz.segmentTitles[1] = "专题讨论"; ObjectID = "ZGA-zt-xdz"; */
+"ZGA-zt-xdz.segmentTitles[1]" = "专题讨论";
+
+/* Class = "UISegmentedControl"; ZGA-zt-xdz.segmentTitles[2] = "其他问题"; ObjectID = "ZGA-zt-xdz"; */
+"ZGA-zt-xdz.segmentTitles[2]" = "其他问题";
+
+/* Class = "UIButton"; selectedTitle = "✓"; ObjectID = "fYx-1S-JvC"; */
+"fYx-1S-JvC.selectedTitle" = "✓";
+
+/* Class = "UILabel"; text = "问题"; ObjectID = "hqN-CM-0DH"; */
+"hqN-CM-0DH.text" = "问题";
+
+/* Class = "UIButton"; normalTitle = "提交"; ObjectID = "tXg-Ow-W6w"; */
+"tXg-Ow-W6w.normalTitle" = "提交";
+
+/* Class = "UIButton"; normalTitle = "选择课程"; ObjectID = "w1W-qg-bhR"; */
+"w1W-qg-bhR.normalTitle" = "选择课程";

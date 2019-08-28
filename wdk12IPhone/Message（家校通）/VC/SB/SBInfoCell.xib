@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SBInfoCell" rowHeight="101" id="lSn-Qb-CV6" customClass="SBInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lSn-Qb-CV6" id="MyC-Bw-UEa">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UkU-Za-U6t" customClass="AvatarImageView">
+                        <rect key="frame" x="15" y="8" width="85" height="85"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UkU-Za-U6t" secondAttribute="height" id="Nqu-4A-Lhh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO7-Vt-X0J" customClass="NameLabel">
+                        <rect key="frame" x="114.5" y="39.5" width="197.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="UkU-Za-U6t" secondAttribute="bottom" id="7Jv-9S-knZ"/>
+                    <constraint firstItem="UkU-Za-U6t" firstAttribute="top" secondItem="MyC-Bw-UEa" secondAttribute="topMargin" id="7b5-R9-w9z"/>
+                    <constraint firstItem="dO7-Vt-X0J" firstAttribute="centerY" secondItem="UkU-Za-U6t" secondAttribute="centerY" id="Eax-Ag-4VZ"/>
+                    <constraint firstItem="UkU-Za-U6t" firstAttribute="leading" secondItem="MyC-Bw-UEa" secondAttribute="leading" constant="15" id="Qj6-ub-3XN"/>
+                    <constraint firstAttribute="trailing" secondItem="dO7-Vt-X0J" secondAttribute="trailing" constant="8" id="fTW-EE-p4M"/>
+                    <constraint firstItem="dO7-Vt-X0J" firstAttribute="leading" secondItem="UkU-Za-U6t" secondAttribute="trailing" constant="15" id="t4o-uu-aAd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="UkU-Za-U6t" id="ZXS-e5-5Bb"/>
+                <outlet property="naleLabel" destination="dO7-Vt-X0J" id="Tzl-UX-6I6"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="301.5"/>
+        </tableViewCell>
+    </objects>
+</document>

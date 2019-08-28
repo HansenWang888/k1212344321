@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Video_left" rowHeight="99" id="9qJ-PR-hh7" customClass="ChatOtherVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qJ-PR-hh7" id="Nw9-Lc-7Vf">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Djn-JY-9sd" customClass="AvatarImageView">
+                        <rect key="frame" x="15" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Djn-JY-9sd" secondAttribute="height" id="QgU-yz-pv9"/>
+                            <constraint firstAttribute="width" constant="40" id="g8c-LN-vOv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rrrrrr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxe-9d-TZ2" customClass="NameLabel">
+                        <rect key="frame" x="73" y="8" width="30" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Djn-JY-9sd" firstAttribute="leading" secondItem="Nw9-Lc-7Vf" secondAttribute="leading" constant="15" id="7aL-Od-Dak"/>
+                    <constraint firstItem="Sxe-9d-TZ2" firstAttribute="leading" secondItem="Djn-JY-9sd" secondAttribute="trailing" constant="18" id="MMS-FC-kJi"/>
+                    <constraint firstItem="Djn-JY-9sd" firstAttribute="top" secondItem="Nw9-Lc-7Vf" secondAttribute="top" constant="8" id="TE2-sz-N0e"/>
+                    <constraint firstItem="Sxe-9d-TZ2" firstAttribute="top" secondItem="Nw9-Lc-7Vf" secondAttribute="top" constant="8" id="obG-UE-opJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="avatarImageView" destination="Djn-JY-9sd" id="HRW-e7-vLm"/>
+                <outlet property="nameLabel" destination="Sxe-9d-TZ2" id="zt1-Hn-kDm"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="209.5"/>
+        </tableViewCell>
+    </objects>
+</document>

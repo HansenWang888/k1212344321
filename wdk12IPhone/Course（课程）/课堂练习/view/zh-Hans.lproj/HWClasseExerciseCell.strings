@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2eE-p2-7aX"; */
+"2eE-p2-7aX.text" = "Label";
+
+/* Class = "UILabel"; text = "班级名称"; ObjectID = "McG-a7-15r"; */
+"McG-a7-15r.text" = "班级名称";
+
+/* Class = "UILabel"; text = "学生人数："; ObjectID = "bgh-WP-4m8"; */
+"bgh-WP-4m8.text" = "学生人数：";
+
+/* Class = "UILabel"; text = "人数"; ObjectID = "kOT-im-9F4"; */
+"kOT-im-9F4.text" = "人数";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pfa-6z-TC2"; */
+"pfa-6z-TC2.text" = "Label";

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mui.ttf">
+            <string>iconfont</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="AudioLeftCons" destination="c3I-ah-gEr" id="sCf-Ws-0m1"/>
+                <outlet property="audioButton" destination="vp2-Qf-Cdx" id="QQo-nr-M2F"/>
+                <outlet property="bottomBar" destination="iN0-l3-epB" id="Kcb-kZ-bl2"/>
+                <outlet property="bottomBarBottomCS" destination="We7-BL-RkC" id="yH9-R3-diy"/>
+                <outlet property="bottomBarHeightCS" destination="4tb-ad-qot" id="DE3-HD-9Ky"/>
+                <outlet property="inputAudio" destination="5Eh-8N-sN5" id="ktC-w5-moI"/>
+                <outlet property="inputText" destination="ufd-C7-6Tf" id="ho1-L3-1lr"/>
+                <outlet property="keyboardButton" destination="ov0-zI-KWa" id="BjF-d1-ggQ"/>
+                <outlet property="otherPlusButton" destination="T7z-3u-rGU" id="TOs-zJ-PlO"/>
+                <outlet property="tableView" destination="f2i-xn-IPH" id="DOm-Ug-XbH"/>
+                <outlet property="view" destination="H7A-JR-3EC" id="4op-xv-Hdt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H7A-JR-3EC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f2i-xn-IPH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="o32-N0-iiP"/>
+                        <outlet property="delegate" destination="-1" id="Hwj-mp-t0v"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="BorderedView">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp2-Qf-Cdx">
+                            <rect key="frame" x="8" y="8" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vp2-Qf-Cdx" secondAttribute="height" multiplier="1:1" id="37T-P2-jib"/>
+                                <constraint firstAttribute="width" constant="33" id="F1I-Xq-ysm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="30"/>
+                            <state key="normal" title="button">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-C7-6Tf">
+                            <rect key="frame" x="49" y="8" width="277" height="33"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="send"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Dvw-lw-HUi"/>
+                            </connections>
+                        </textView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ov0-zI-KWa">
+                            <rect key="frame" x="8" y="8" width="33" height="33"/>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="30"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eh-8N-sN5">
+                            <rect key="frame" x="49" y="8" width="277" height="33"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="15"/>
+                            <state key="normal" title="按下开始说话">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7z-3u-rGU">
+                            <rect key="frame" x="334" y="8" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="SHF-cj-zvx"/>
+                                <constraint firstAttribute="width" secondItem="T7z-3u-rGU" secondAttribute="height" multiplier="1:1" id="znB-Tw-LMI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="30"/>
+                            <state key="normal" title="button">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ufd-C7-6Tf" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-49" id="0hy-Ym-7Gf"/>
+                        <constraint firstItem="5Eh-8N-sN5" firstAttribute="centerY" secondItem="ufd-C7-6Tf" secondAttribute="centerY" id="43W-gP-6Wu"/>
+                        <constraint firstAttribute="height" constant="49" id="4tb-ad-qot"/>
+                        <constraint firstItem="ov0-zI-KWa" firstAttribute="centerY" secondItem="vp2-Qf-Cdx" secondAttribute="centerY" id="67S-wQ-Tz4"/>
+                        <constraint firstItem="vp2-Qf-Cdx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Aw5-MU-Fcd"/>
+                        <constraint firstItem="ov0-zI-KWa" firstAttribute="width" secondItem="vp2-Qf-Cdx" secondAttribute="width" id="L5b-Va-uHE"/>
+                        <constraint firstItem="ufd-C7-6Tf" firstAttribute="leading" secondItem="vp2-Qf-Cdx" secondAttribute="trailing" constant="8" id="Os9-Wy-alA"/>
+                        <constraint firstItem="ov0-zI-KWa" firstAttribute="centerX" secondItem="vp2-Qf-Cdx" secondAttribute="centerX" id="Ulu-wH-Kjk"/>
+                        <constraint firstItem="ov0-zI-KWa" firstAttribute="height" secondItem="vp2-Qf-Cdx" secondAttribute="height" id="YLP-pk-B8U"/>
+                        <constraint firstItem="T7z-3u-rGU" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="aeL-mZ-cBJ"/>
+                        <constraint firstItem="ufd-C7-6Tf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="bsF-et-eYl"/>
+                        <constraint firstItem="vp2-Qf-Cdx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="c3I-ah-gEr"/>
+                        <constraint firstItem="ufd-C7-6Tf" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="dyC-rt-6yJ"/>
+                        <constraint firstItem="5Eh-8N-sN5" firstAttribute="centerX" secondItem="ufd-C7-6Tf" secondAttribute="centerX" id="ehj-mY-T6g"/>
+                        <constraint firstItem="5Eh-8N-sN5" firstAttribute="height" secondItem="ufd-C7-6Tf" secondAttribute="height" id="jfl-Mv-IbD"/>
+                        <constraint firstItem="5Eh-8N-sN5" firstAttribute="width" secondItem="ufd-C7-6Tf" secondAttribute="width" id="lhD-lq-g2z"/>
+                        <constraint firstItem="T7z-3u-rGU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="pfN-S0-MiI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f2i-xn-IPH" firstAttribute="leading" secondItem="H7A-JR-3EC" secondAttribute="leading" id="6Xb-7u-3aa"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="H7A-JR-3EC" secondAttribute="trailing" id="9zf-LL-1zR"/>
+                <constraint firstItem="f2i-xn-IPH" firstAttribute="trailing" secondItem="H7A-JR-3EC" secondAttribute="trailing" id="By1-bn-33q"/>
+                <constraint firstItem="f2i-xn-IPH" firstAttribute="top" secondItem="H7A-JR-3EC" secondAttribute="top" id="VEF-aX-WGn"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="bottom" secondItem="H7A-JR-3EC" secondAttribute="bottom" id="We7-BL-RkC"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="H7A-JR-3EC" secondAttribute="leading" id="aI4-ax-h6l"/>
+                <constraint firstItem="f2i-xn-IPH" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="top" id="c3k-7A-byp"/>
+            </constraints>
+            <point key="canvasLocation" x="104" y="229"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

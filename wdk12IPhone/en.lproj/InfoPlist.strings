@@ -1,0 +1,6 @@
+CFBundleDisplayName = "12study";
+NSCameraUsageDescription = "12study need your approval to access the camera";
+
+NSMicrophoneUsageDescription = "12study need your approval to access the microphone";
+
+NSPhotoLibraryUsageDescription = "12study need your approval to access photo album";

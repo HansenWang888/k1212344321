@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "上官古月"; ObjectID = "7FM-QE-pdk"; */
+"7FM-QE-pdk.text" = "上官古月";
+
+/* Class = "UIButton"; normalTitle = "采纳"; ObjectID = "S8x-zL-Dd5"; */
+"S8x-zL-Dd5.normalTitle" = "采纳";
+
+/* Class = "UILabel"; text = "已采纳"; ObjectID = "b9r-Ak-fID"; */
+"b9r-Ak-fID.text" = "已采纳";
+
+/* Class = "UILabel"; text = "2016-10-12 14:23"; ObjectID = "khy-hb-291"; */
+"khy-hb-291.text" = "2016-10-12 14:23";
+
+/* Class = "UILabel"; text = "哈哈哈哈哈啊哈哈哈哈哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈啊哈哈哈哈哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈啊哈哈哈哈"; ObjectID = "nis-4Y-D9V"; */
+"nis-4Y-D9V.text" = "哈哈哈哈哈啊哈哈哈哈哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈啊哈哈哈哈哈哈啊哈哈啊哈哈啊哈哈哈哈哈哈哈啊哈哈哈哈";
+
+/* Class = "UIButton"; normalTitle = "回复"; ObjectID = "plP-kX-ddr"; */
+"plP-kX-ddr.normalTitle" = "回复";

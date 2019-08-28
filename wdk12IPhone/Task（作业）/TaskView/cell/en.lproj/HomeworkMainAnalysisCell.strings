@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "正确"; ObjectID = "0fN-pd-ta0"; */
+"0fN-pd-ta0.text" = "Correct";
+
+/* Class = "UILabel"; text = "对"; ObjectID = "6jL-Yq-wFb"; */
+"6jL-Yq-wFb.text" = "Right";
+
+/* Class = "UILabel"; text = "得分："; ObjectID = "D7f-Me-9gR"; */
+"D7f-Me-9gR.text" = "Score：";

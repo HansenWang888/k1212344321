@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WDChooseCourseView">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="332"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择课程" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ki-ZF-QHo">
+                    <rect key="frame" x="10" y="8" width="329" height="40"/>
+                    <color key="backgroundColor" red="0.23612829690000001" green="0.66666666669999997" blue="0.61886491060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RpZ-xa-bj7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tAm-OL-yA0">
+                    <rect key="frame" x="10" y="56" width="329" height="226"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="R1M-zD-aO2"/>
+                        <outlet property="delegate" destination="-1" id="cre-v4-B5s"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ4-32-aA7">
+                    <rect key="frame" x="10" y="292" width="154.5" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="71z-VR-bVU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-1y-5sj">
+                    <rect key="frame" x="184.5" y="292" width="154.5" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.69442973770000005" blue="0.31704653269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="H69-vU-GGC"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="wtz-eE-yqG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lPf-1y-5sj" secondAttribute="bottom" constant="10" id="863-Yu-e3R"/>
+                <constraint firstAttribute="bottom" secondItem="VQ4-32-aA7" secondAttribute="bottom" constant="10" id="91S-fj-PwI"/>
+                <constraint firstAttribute="trailing" secondItem="8Ki-ZF-QHo" secondAttribute="trailing" constant="10" id="9n1-Il-y1g"/>
+                <constraint firstItem="tAm-OL-yA0" firstAttribute="top" secondItem="8Ki-ZF-QHo" secondAttribute="bottom" constant="8" id="BVL-Pk-zhs"/>
+                <constraint firstItem="lPf-1y-5sj" firstAttribute="top" secondItem="tAm-OL-yA0" secondAttribute="bottom" constant="10" id="N4b-GD-I8t"/>
+                <constraint firstItem="tAm-OL-yA0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="OQ9-Y2-9Bc"/>
+                <constraint firstItem="VQ4-32-aA7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VKd-As-kxX"/>
+                <constraint firstItem="lPf-1y-5sj" firstAttribute="leading" secondItem="VQ4-32-aA7" secondAttribute="trailing" constant="20" id="Vlr-WA-7v7"/>
+                <constraint firstAttribute="trailing" secondItem="tAm-OL-yA0" secondAttribute="trailing" constant="10" id="eR4-Ay-if7"/>
+                <constraint firstItem="lPf-1y-5sj" firstAttribute="width" secondItem="VQ4-32-aA7" secondAttribute="width" id="fgm-nI-YI8"/>
+                <constraint firstItem="lPf-1y-5sj" firstAttribute="leading" secondItem="VQ4-32-aA7" secondAttribute="trailing" constant="20" id="hge-G6-OwJ"/>
+                <constraint firstAttribute="trailing" secondItem="lPf-1y-5sj" secondAttribute="trailing" constant="10" id="oFv-7N-Fcv"/>
+                <constraint firstItem="8Ki-ZF-QHo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qsG-tY-uoF"/>
+                <constraint firstItem="lPf-1y-5sj" firstAttribute="height" secondItem="VQ4-32-aA7" secondAttribute="height" id="sXE-fN-i3q"/>
+                <constraint firstItem="8Ki-ZF-QHo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vNz-bY-Zp9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="tAm-OL-yA0" id="JV6-zT-7Xk"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="-81"/>
+        </view>
+    </objects>
+</document>

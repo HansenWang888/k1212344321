@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Image_left" rowHeight="99" id="phN-NA-ctf" customClass="ChatImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="phN-NA-ctf" id="bnz-SA-BzZ">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gkb-jR-fEM">
+                        <rect key="frame" x="28" y="86" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ki-7S-S5l" customClass="AvatarImageView">
+                        <rect key="frame" x="15" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1fX-AM-UWR"/>
+                            <constraint firstAttribute="width" secondItem="3ki-7S-S5l" secondAttribute="height" id="4ll-Vt-Wxa"/>
+                        </constraints>
+                    </imageView>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aH-V7-nqM" customClass="chatAnthorImageViewLeft">
+                        <rect key="frame" x="63" y="25" width="110" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="3l7-Si-KNF"/>
+                            <constraint firstAttribute="width" constant="110" id="4FC-WQ-OpD"/>
+                        </constraints>
+                    </view>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0D-0v-Ki7">
+                        <rect key="frame" x="28" y="85" width="20" height="20"/>
+                        <color key="tintColor" red="0.95707367860000003" green="0.27785773029999999" blue="0.29658334139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="R0D-0v-Ki7" secondAttribute="height" id="UJe-j4-aKw"/>
+                            <constraint firstAttribute="width" constant="20" id="vCl-zR-tEt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rrrrrr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ct-FC-Hqf" customClass="NameLabel">
+                        <rect key="frame" x="73" y="8" width="30" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-MJ-IHF">
+                        <rect key="frame" x="122" y="-20" width="110" height="140"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2ct-FC-Hqf" firstAttribute="leading" secondItem="3ki-7S-S5l" secondAttribute="trailing" constant="18" id="1qa-Kh-D0F"/>
+                    <constraint firstItem="PtU-MJ-IHF" firstAttribute="leading" secondItem="7aH-V7-nqM" secondAttribute="leading" id="6Od-yK-V5c"/>
+                    <constraint firstItem="PtU-MJ-IHF" firstAttribute="height" secondItem="7aH-V7-nqM" secondAttribute="height" id="6m9-to-CqB"/>
+                    <constraint firstItem="R0D-0v-Ki7" firstAttribute="centerY" secondItem="7aH-V7-nqM" secondAttribute="centerY" id="82J-xu-oB9"/>
+                    <constraint firstItem="7aH-V7-nqM" firstAttribute="top" secondItem="bnz-SA-BzZ" secondAttribute="top" constant="25" id="MIv-VA-juW"/>
+                    <constraint firstItem="gkb-jR-fEM" firstAttribute="centerY" secondItem="7aH-V7-nqM" secondAttribute="centerY" id="NCh-wZ-WkO"/>
+                    <constraint firstItem="gkb-jR-fEM" firstAttribute="trailing" secondItem="7aH-V7-nqM" secondAttribute="leading" constant="-15" id="O0P-2F-Sy6"/>
+                    <constraint firstItem="2ct-FC-Hqf" firstAttribute="top" secondItem="bnz-SA-BzZ" secondAttribute="top" constant="8" id="PzE-Gx-kj1"/>
+                    <constraint firstItem="7aH-V7-nqM" firstAttribute="leading" secondItem="3ki-7S-S5l" secondAttribute="trailing" constant="8" id="UJY-8u-afk"/>
+                    <constraint firstItem="PtU-MJ-IHF" firstAttribute="trailing" secondItem="7aH-V7-nqM" secondAttribute="trailing" id="V43-6w-AyV"/>
+                    <constraint firstItem="3ki-7S-S5l" firstAttribute="top" secondItem="bnz-SA-BzZ" secondAttribute="top" constant="8" id="iTn-IB-Aik"/>
+                    <constraint firstItem="R0D-0v-Ki7" firstAttribute="trailing" secondItem="7aH-V7-nqM" secondAttribute="leading" constant="-15" id="mDN-fc-umS"/>
+                    <constraint firstItem="3ki-7S-S5l" firstAttribute="leading" secondItem="bnz-SA-BzZ" secondAttribute="leading" constant="15" id="mSX-cZ-VLj"/>
+                    <constraint firstItem="PtU-MJ-IHF" firstAttribute="top" secondItem="7aH-V7-nqM" secondAttribute="top" id="xN4-dn-rwY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="anchorHeightCS" destination="3l7-Si-KNF" id="Atz-cu-XzR"/>
+                <outlet property="anchorTopCS" destination="MIv-VA-juW" id="Jik-LF-zGx"/>
+                <outlet property="anchorView" destination="7aH-V7-nqM" id="T77-8W-X6w"/>
+                <outlet property="anchorWidthCS" destination="4FC-WQ-OpD" id="oJe-kS-VVC"/>
+                <outlet property="avatarImageView" destination="3ki-7S-S5l" id="a12-lE-naW"/>
+                <outlet property="faildMark" destination="R0D-0v-Ki7" id="Ko3-mL-vd3"/>
+                <outlet property="gifHeightCS" destination="6m9-to-CqB" id="DIz-ZI-el2"/>
+                <outlet property="gifView" destination="PtU-MJ-IHF" id="YWc-Cs-2Jt"/>
+                <outlet property="indicatorView" destination="gkb-jR-fEM" id="jKF-kB-mjz"/>
+                <outlet property="namelabel" destination="2ct-FC-Hqf" id="Bj2-LD-SCE"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarNickCell" id="6xs-i2-9rl" customClass="AvatarNickCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ug3-H6-z8T" customClass="AvatarImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="152"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ug3-H6-z8T" secondAttribute="height" id="X9o-Ur-dTH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-Kg-U0S" customClass="NameLabel">
+                        <rect key="frame" x="59.5" y="155" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="uDc-Kg-U0S" firstAttribute="top" secondItem="Ug3-H6-z8T" secondAttribute="bottom" constant="3" id="9sF-d1-Fur"/>
+                <constraint firstItem="Ug3-H6-z8T" firstAttribute="leading" secondItem="6xs-i2-9rl" secondAttribute="leading" id="UuO-Ah-1qG"/>
+                <constraint firstItem="uDc-Kg-U0S" firstAttribute="bottom" secondItem="6xs-i2-9rl" secondAttribute="bottom" id="XWb-fF-h1O"/>
+                <constraint firstItem="Ug3-H6-z8T" firstAttribute="trailing" secondItem="6xs-i2-9rl" secondAttribute="trailing" id="g5h-7D-7dJ"/>
+                <constraint firstItem="uDc-Kg-U0S" firstAttribute="centerX" secondItem="Ug3-H6-z8T" secondAttribute="centerX" id="gcJ-bq-dQh"/>
+                <constraint firstItem="Ug3-H6-z8T" firstAttribute="top" secondItem="6xs-i2-9rl" secondAttribute="top" id="grK-LW-5wl"/>
+            </constraints>
+            <size key="customSize" width="152" height="178"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XWb-fF-h1O"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatarImageView" destination="Ug3-H6-z8T" id="ebR-hq-ipw"/>
+                <outlet property="groupNameLabel" destination="uDc-Kg-U0S" id="s7c-cL-TfC"/>
+            </connections>
+            <point key="canvasLocation" x="178" y="245"/>
+        </collectionViewCell>
+    </objects>
+</document>

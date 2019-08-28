@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TQX-tW-FEz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="agm-eA-iDR">
+            <objects>
+                <viewController id="TQX-tW-FEz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hNw-tL-ZkW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ulu-Jt-3Fg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S6y-Mn-40S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage_ch" translatesAutoresizingMaskIntoConstraints="NO" id="CYW-h6-Tmh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CYW-h6-Tmh" firstAttribute="top" secondItem="hNw-tL-ZkW" secondAttribute="bottom" id="4Z4-4W-oxq"/>
+                            <constraint firstItem="CYW-h6-Tmh" firstAttribute="leading" secondItem="S6y-Mn-40S" secondAttribute="leading" id="7ig-wU-aub"/>
+                            <constraint firstItem="Ulu-Jt-3Fg" firstAttribute="top" secondItem="CYW-h6-Tmh" secondAttribute="bottom" id="K3I-KS-aRl"/>
+                            <constraint firstAttribute="trailing" secondItem="CYW-h6-Tmh" secondAttribute="trailing" id="Xvf-rO-pFJ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iI0-lK-dXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106.40000000000001" y="204.64767616191907"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchImage_ch" width="750" height="1334"/>
+    </resources>
+</document>

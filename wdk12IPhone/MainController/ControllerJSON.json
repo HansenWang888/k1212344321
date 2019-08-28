@@ -1,0 +1,33 @@
+ [
+  {
+  "ctlName" : "CourseViewController",
+  "titleName" : "课程",
+  "imageName" : "111111"
+  },
+  
+  {
+  "ctlName" : "HWTaskViewController",
+  "titleName" : "作业",
+  "imageName" : "222222"
+  
+  },
+  
+  {
+  "ctlName" : "MessageViewController",
+  "titleName" : "家校通",
+  "imageName" : "333333"
+  
+  },
+  
+  {
+  "ctlName" : "WDQuestionViewController",
+  "titleName" : "问答",
+  "imageName" : "444444"
+  },
+  
+  {
+  "ctlName" : "MoreTableViewController",
+  "titleName" : "更多" ,
+  "imageName" : "555555"
+  }
+  ]

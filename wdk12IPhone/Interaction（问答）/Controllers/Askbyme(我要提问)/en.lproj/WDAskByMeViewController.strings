@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "提 交"; ObjectID = "1fi-Xg-ZxK"; */
+"1fi-Xg-ZxK.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "选择课程"; ObjectID = "6rf-60-Fac"; */
+"6rf-60-Fac.normalTitle" = "Select a course";
+
+/* Class = "UIButton"; selectedTitle = "✔️"; ObjectID = "U5B-VD-LTf"; */
+"U5B-VD-LTf.selectedTitle" = "✔️";
+
+/* Class = "UILabel"; text = "  问题"; ObjectID = "ccb-yt-m4n"; */
+"ccb-yt-m4n.text" = "  Question";
+
+/* Class = "UISegmentedControl"; eED-K1-TXV.segmentTitles[0] = "课程疑问"; ObjectID = "eED-K1-TXV"; */
+"eED-K1-TXV.segmentTitles[0]" = "Course";
+
+/* Class = "UISegmentedControl"; eED-K1-TXV.segmentTitles[1] = "专题讨论"; ObjectID = "eED-K1-TXV"; */
+"eED-K1-TXV.segmentTitles[1]" = "Seminar";
+
+/* Class = "UISegmentedControl"; eED-K1-TXV.segmentTitles[2] = "其他问题"; ObjectID = "eED-K1-TXV"; */
+"eED-K1-TXV.segmentTitles[2]" = "Other";
+
+/* Class = "UILabel"; text = "匿名"; ObjectID = "lY5-60-snQ"; */
+"lY5-60-snQ.text" = "Anonymous";
+
+/* Class = "UITextField"; placeholder = "请输入标题"; ObjectID = "nEM-Wz-che"; */
+"nEM-Wz-che.placeholder" = "Please enter a title";

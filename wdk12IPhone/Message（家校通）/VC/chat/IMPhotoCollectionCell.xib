@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="iconfont.ttf">
+            <string>iconfont</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="5V1-k3-M7q" customClass="IMPhotoCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-mU-piB">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjZ-cJ-PLo">
+                        <rect key="frame" x="140" y="153" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="HFK-hu-knR"/>
+                            <constraint firstAttribute="height" constant="25" id="zxG-fS-zcG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="20"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.36862745099999999" green="0.74901960779999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.36862745099999999" green="0.74901960779999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="seletedBtnClick" destination="5V1-k3-M7q" eventType="touchUpInside" id="uCT-qS-yOT"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KGo-mU-piB" secondAttribute="bottom" id="8JM-rz-uut"/>
+                <constraint firstAttribute="bottom" secondItem="OjZ-cJ-PLo" secondAttribute="bottom" constant="8" id="HGU-lI-Bs8"/>
+                <constraint firstAttribute="trailing" secondItem="KGo-mU-piB" secondAttribute="trailing" id="S1A-xM-l0T"/>
+                <constraint firstItem="KGo-mU-piB" firstAttribute="top" secondItem="5V1-k3-M7q" secondAttribute="top" id="kcs-9v-Nka"/>
+                <constraint firstAttribute="trailing" secondItem="OjZ-cJ-PLo" secondAttribute="trailing" constant="8" id="nJw-ye-S3K"/>
+                <constraint firstItem="KGo-mU-piB" firstAttribute="leading" secondItem="5V1-k3-M7q" secondAttribute="leading" id="x9U-x8-yD9"/>
+            </constraints>
+            <size key="customSize" width="173" height="186"/>
+            <connections>
+                <outlet property="imgView" destination="KGo-mU-piB" id="iBY-Vz-aJe"/>
+                <outlet property="seletedBtn" destination="OjZ-cJ-PLo" id="1EG-Vf-cco"/>
+            </connections>
+            <point key="canvasLocation" x="273.5" y="395"/>
+        </collectionViewCell>
+    </objects>
+</document>

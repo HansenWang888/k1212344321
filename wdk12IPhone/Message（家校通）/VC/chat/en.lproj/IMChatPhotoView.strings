@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "9/10"; ObjectID = "K9B-Xz-Q2u"; */
+"K9B-Xz-Q2u.text" = "9/10";
+
+/* Class = "UIButton"; normalTitle = "相册"; ObjectID = "NQJ-sb-6Xk"; */
+"NQJ-sb-6Xk.normalTitle" = "相册";
+
+/* Class = "UIButton"; normalTitle = "拍照"; ObjectID = "jnZ-Jo-7zS"; */
+"jnZ-Jo-7zS.normalTitle" = "拍照";
+
+/* Class = "UIButton"; normalTitle = "发送"; ObjectID = "rOW-dB-RpH"; */
+"rOW-dB-RpH.normalTitle" = "发送";

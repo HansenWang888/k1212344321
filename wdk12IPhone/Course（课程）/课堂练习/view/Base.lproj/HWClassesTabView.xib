@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="iconfont.ttf">
+            <string>iconfont</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="37O-OY-jU8" customClass="HWClassesTabView">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-FQ-Thk">
+                    <rect key="frame" x="0.0" y="35" width="528" height="81"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGb-Vx-UTa">
+                            <rect key="frame" x="50" y="24.5" width="36" height="32"/>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="18"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="37O-OY-jU8" eventType="touchUpInside" id="46s-7x-wcw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-1G-2Bi">
+                            <rect key="frame" x="442" y="24.5" width="36" height="32"/>
+                            <fontDescription key="fontDescription" name="iconfont" family="iconfont" pointSize="18"/>
+                            <state key="normal" title="重置">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="37O-OY-jU8" eventType="touchUpInside" id="1un-ab-And"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.19607843137254902" green="0.20784313725490194" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fvR-1G-2Bi" firstAttribute="centerY" secondItem="dOQ-FQ-Thk" secondAttribute="centerY" id="5Vt-zu-MWW"/>
+                        <constraint firstItem="jGb-Vx-UTa" firstAttribute="centerY" secondItem="dOQ-FQ-Thk" secondAttribute="centerY" id="IYu-vT-DXz"/>
+                        <constraint firstItem="jGb-Vx-UTa" firstAttribute="leading" secondItem="dOQ-FQ-Thk" secondAttribute="leading" constant="50" id="uKS-2F-2bY"/>
+                        <constraint firstAttribute="trailing" secondItem="fvR-1G-2Bi" secondAttribute="trailing" constant="50" id="udB-eb-Hjy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRj-6w-dnL">
+                    <rect key="frame" x="216" y="0.0" width="96" height="96"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nRj-6w-dnL" secondAttribute="height" multiplier="1:1" id="o6r-hV-5QN"/>
+                    </constraints>
+                    <state key="normal" image="submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-be-8lM">
+                    <rect key="frame" x="216" y="0.0" width="96" height="96"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="37O-OY-jU8" eventType="touchUpInside" id="GMw-yQ-6Tp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dOQ-FQ-Thk" secondAttribute="bottom" id="39O-M3-GgT"/>
+                <constraint firstItem="hpD-be-8lM" firstAttribute="trailing" secondItem="nRj-6w-dnL" secondAttribute="trailing" id="Bae-om-gdj"/>
+                <constraint firstItem="dOQ-FQ-Thk" firstAttribute="leading" secondItem="37O-OY-jU8" secondAttribute="leading" id="C5v-eH-yhQ"/>
+                <constraint firstItem="nRj-6w-dnL" firstAttribute="top" secondItem="37O-OY-jU8" secondAttribute="top" id="Gtz-Qm-qBb"/>
+                <constraint firstItem="dOQ-FQ-Thk" firstAttribute="height" secondItem="37O-OY-jU8" secondAttribute="height" multiplier="0.7" id="HcI-Zg-JFa"/>
+                <constraint firstAttribute="trailing" secondItem="dOQ-FQ-Thk" secondAttribute="trailing" id="NoS-4b-eUQ"/>
+                <constraint firstItem="hpD-be-8lM" firstAttribute="leading" secondItem="nRj-6w-dnL" secondAttribute="leading" id="RfS-TU-XSn"/>
+                <constraint firstItem="hpD-be-8lM" firstAttribute="centerY" secondItem="nRj-6w-dnL" secondAttribute="centerY" id="W4u-zt-1DM"/>
+                <constraint firstAttribute="bottom" secondItem="nRj-6w-dnL" secondAttribute="bottom" constant="20" id="YUZ-9T-bds"/>
+                <constraint firstItem="hpD-be-8lM" firstAttribute="height" secondItem="nRj-6w-dnL" secondAttribute="height" id="cJu-gG-TpB"/>
+                <constraint firstItem="hpD-be-8lM" firstAttribute="width" secondItem="nRj-6w-dnL" secondAttribute="width" id="ifY-Z3-eeU"/>
+                <constraint firstItem="nRj-6w-dnL" firstAttribute="centerX" secondItem="dOQ-FQ-Thk" secondAttribute="centerX" id="xf4-HZ-ERK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="jGb-Vx-UTa" id="64K-Pg-dxX"/>
+                <outlet property="resetBtn" destination="fvR-1G-2Bi" id="PS8-1r-07q"/>
+                <outlet property="submitBackgroudBtn" destination="nRj-6w-dnL" id="4NM-y6-vr2"/>
+                <outlet property="submitBtn" destination="hpD-be-8lM" id="FYI-4r-Vxk"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="-53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="submit" width="70" height="70"/>
+    </resources>
+</document>

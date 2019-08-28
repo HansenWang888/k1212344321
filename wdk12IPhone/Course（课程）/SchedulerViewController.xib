@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchedulerViewController">
+            <connections>
+                <outlet property="tableView" destination="Ou1-t8-0u9" id="F5g-13-Mnf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course_popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="3lh-kI-EAk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ou1-t8-0u9">
+                    <rect key="frame" x="15" y="20" width="345" height="632"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9s5-Fk-IHf"/>
+                        <outlet property="delegate" destination="-1" id="UCE-BN-uNb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3lh-kI-EAk" secondAttribute="bottom" id="0wN-zp-6NO"/>
+                <constraint firstItem="Ou1-t8-0u9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="4jg-eX-Wct"/>
+                <constraint firstItem="3lh-kI-EAk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Eb-9g-6RO"/>
+                <constraint firstItem="3lh-kI-EAk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D5e-4Z-Og8"/>
+                <constraint firstAttribute="trailing" secondItem="3lh-kI-EAk" secondAttribute="trailing" id="XAb-3m-Vfh"/>
+                <constraint firstAttribute="trailing" secondItem="Ou1-t8-0u9" secondAttribute="trailing" constant="15" id="XwK-IB-ehd"/>
+                <constraint firstItem="Ou1-t8-0u9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="i8o-JD-XO3"/>
+                <constraint firstAttribute="bottom" secondItem="Ou1-t8-0u9" secondAttribute="bottom" constant="15" id="y8z-b4-4KO"/>
+            </constraints>
+            <point key="canvasLocation" x="-251" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="course_popover_background" width="217" height="49"/>
+    </resources>
+</document>
